@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Rental Application</title>
+</head>
+<body>
+<center><h2>Rental Application</h2></center>
+<div>
+    <div class="container1">
+        <form action="submit_phpcrm_form.php" method="post"><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+			<label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" required>
+			<label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone" required>
+			<label for="occupation">Occupation</label>
+            <select name="occupation" id="occupation">
+				<option value="Occupation1">Occupation1</option>
+				<option value="Occupation2">Occupation2</option>
+				<option value="Occupation3">Occupation3</option>
+				<option value="Occupation4">Occupation4</option>  
+			</select>  
+			<label for="radio1">Marital status</label><br>
+			<input type="radio" id=" yes" name="radio1" value="Yes" style="margin-left:13px;">&nbspYes<label for="yes"></label><br>
+			<input type="radio" id="no" name="radio1" value="No" style="margin-left:13px;">&nbspNo<label for="no"></label><br><br>
+			<label for="occupants">Total number of occupants</label>
+            <input type="text" id="occupants" name="occupants" >
+			<h4>Previous residential details</h4><hr>  
+			<label for="street">Street Address1</label>
+            <input type="text" id="street1" name="street1" required>
+			<label for="street">Street Address2</label>
+            <input type="text" id="street2" name="street2" >
+			<div class="row"> 
+                <div class="col-50">
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" required>
+					<label for="zipcode">Zip Code</label>
+					<input type="number" id="zipcode" name="zipcode" required> 
+				</div>
+				<div class="col-50">
+					<label for="state">State</label>
+					<input type="text" id="state" name="state" required>
+					<label for="country">Country</label>
+					<select name="country" id="country" required>
+					  <option value="India">India</option>
+					  <option value="USA">USA</option>
+					  <option value="UK">UK</option>					 
+					</select>
+				</div>
+            </div> 
+			<label for="owner_name">Owner Name</label>
+            <input type="text" id="owner_name" name="owner_name" required>
+			<label for="owner_number">Owner contact 's number</label>
+            <input type="number" id="owner_number" name="owner_number" required>
+			<label for="rental_duration">Rental duration</label>
+			<select name="rental_duration" id="rental_duration">
+				<option value="1">1 year</option>
+				<option value="2">2 year</option>
+				<option value="3">3 year</option>
+				<option value="4">4 year</option>
+			</select>  
+			<label for="message">Reason For Shifting</label>
+            <textarea id="message" name="message" style="height:80px" required></textarea>
+			<input type="submit" value="SUBMIT" class="btn">
+		</form>
+    </div>
+</div>
+
+</body>
+</html>
